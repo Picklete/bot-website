@@ -14,6 +14,9 @@ body:not(.c-page-on-scroll) header .c-theme-nav li {
   z-index: 2;
   box-shadow:2px 4px 10px rgba(#333,0.5);
 }
+.c-logo img {
+  margin: 0 !important;
+}
 
 .about-content{
   background: #fff;

@@ -6,7 +6,7 @@ block content
     .c-navbar
       .container
         .c-navbar-wrapper.clearfix
-          .c-brand.c-pull-left
+          .c-brand.c-pull-left(style="margin: 0;margin-top:-12px;")
             a.c-logo(href='index.html')
               img.c-desktop-logo(src='assets/images/logo.png', alt='JANGO')
               img.c-desktop-logo-inverse(src='assets/images/logo.png', alt='JANGO')
@@ -33,22 +33,36 @@ block content
               li.c-menu-type-classic
                 a.c-link.dropdown-toggle(href='#joinus', data-t='menu.contact')
   main#index.c-layout-page
-    section.c-layout-revo-slider.c-layout-revo-slider-11
+    section.c-layout-revo-slider.c-layout-revo-slider-7
       .tp-banner-container.tp-fullscreen.tp-fullscreen-mobile.c-arrow-darken(data-bullets-pos='center')
-        .tp-banner
-          ul
-            li(data-transition='fade', data-slotamount='1', data-masterspeed='1000')
-              img(alt='', src='assets/images/cover-1.jpg', data-bgposition='center center', data-bgfit='cover', data-bgrepeat='no-repeat')
-              .caption.customin.customout(data-x='center', data-y='center', data-hoffset='', data-voffset='-50', data-speed='500', data-start='1000', data-customin='x:0;y:0;z:0;rotationX:0.5;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-customout='x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-easing='Back.easeOut', data-splitin='none', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='600')
-                h3.c-main-title.c-font-48.c-font-bold.c-font-center.c-font-uppercase.c-font-dark.c-block(data-t='index.title')
-              .to-caption.lft(data-x='center', data-y='center', data-voffset='110', data-speed='900', data-start='2000', data-transform_idle='o:1;', data-transform_in='x:100;y:100;rX:120;scaleX:0.75;scaleY:0.75;o:0;s:500;e:Back.easeInOut;', data-transform_out='x:100;y:100;rX:120;scaleX:0.75;scaleY:0.75;o:0;s:500;e:Back.easeInOut;')
-                a.c-action-btn.btn.btn-lg.c-btn-square.c-theme-btn.c-btn-bold.c-btn-uppercase(href='#') Learn More
-              .caption.lft(data-x='center', data-y='center', data-voffset='140', data-speed='900', data-start='2000', data-easing='easeOutExpo')
-                a.c-action-btn.btn.btn-xlg.c-btn-border-1x.c-btn-square.btn-default.c-btn-bold.c-btn-uppercase(href='#joinus', data-t='index.button')
+          div.c-singup-form(style="display:block;")
+            
+            h3.c-font-54.c-font-thin.c-font-white.c-margin-b-40.c-font-uppercase
+              | 華文世界中
+              span.c-theme-font.c-font-bold.c-block 智能對談式
+              |  電子商務服務
+            h5.c-font-24.c-font-thin.c-font-white.c-font-uppercase.c-subtitle.c-margin-b-40 立即申請，享有專人諮詢
+
+            //- h3.c-main-title.c-font-48.c-font-bold.c-font-center.c-font-uppercase.c-font-dark.c-block(data-t='index.title')
+            form.form-inline(action='#')
+              .form-group
+                input.form-control.c-bg-transparent.input-lg.c-theme.c-square(type='text', placeholder='聯絡姓名')
+              .form-group
+                input.form-control.c-bg-transparent.input-lg.c-theme.c-square(type='email', placeholder='Email')
+              button.btn.btn-lg.btn-danger.c-btn-uppercase.c-btn-square.c-btn-bold(type='submit') 立即詢問
+          .tp-banner
+            ul
+              li(data-transition='fade', data-slotamount='1', data-masterspeed='500')
+                img(alt='', src='assets/images/view1.jpg', data-bgposition='center center', data-bgfit='cover', data-bgrepeat='no-repeat', style="opacity:0.1;")
+              li(data-transition='fade', data-slotamount='1', data-masterspeed='500')
+                img(alt='', src='assets/images/view2.jpg', data-bgposition='center center', data-bgfit='cover', data-bgrepeat='no-repeat')
+              li(data-transition='fade', data-slotamount='1', data-masterspeed='500')
+                img(alt='', src='assets/images/view3.jpg', data-bgposition='center center', data-bgfit='cover', data-bgrepeat='no-repeat')
+
     section#intro.about-content
       #about-mokayo
         h3.c-font-24.c-font-center(data-t='intro.title')
-        span.c-font-36.c-font-white Picklete
+        span.c-font-36.c-font-white Picklete Bot
         p.c-font-17.c-font-center(data-t='intro.description')
     section.feature-content
       .container-fluid

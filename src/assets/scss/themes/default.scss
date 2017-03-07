@@ -8,7 +8,7 @@ THEME COLOR - DEFAULT
 @import '../_colors';  
 
 // Base color
-$theme-name: 					yellow3;
+$theme-name: 					default;
 $base-color: 					map-get($theme-colors, $theme-name);
 
 // Link Settings
