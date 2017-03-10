@@ -58,6 +58,8 @@
             <h3 class="c-font-54 c-font-thin c-font-white c-margin-b-40 c-font-uppercase">華文世界中<span class="c-theme-font c-font-bold c-block">智能對談式</span> 電子商務服務</h3>
             <h5 class="c-font-24 c-font-thin c-font-white c-font-uppercase c-subtitle c-margin-b-40">立即申請，享有專人諮詢</h5>
             <form action="//exma-square.us13.list-manage.com/subscribe/post?u=3cbc77dd061f94042895497df&amp;id=bd6cac3f67" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate="" class="email-form form-inline">
+              <input type="hidden" name="u" value="3cbc77dd061f94042895497df">
+              <input type="hidden" name="id" value="bd6cac3f67">
               <div class="form-group">
                 <input type="email" value="" name="FNAME" placeholder="聯絡姓名" class="form-control c-bg-transparent input-lg c-theme c-square">
               </div>
@@ -169,9 +171,11 @@
             </div>
             <div class="col-sm-6">
               <form action="//exma-square.us13.list-manage.com/subscribe/post?u=3cbc77dd061f94042895497df&amp;id=bd6cac3f67" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate="">
+                <input type="hidden" name="u" value="3cbc77dd061f94042895497df">
+                <input type="hidden" name="id" value="bd6cac3f67">
                 <div class="input-group input-group-lg">
                   <input id="EMAIL" type="text" name="EMAIL" required class="form-control c-square c-font-grey-3 c-border-grey c-theme" placeholder="Please enter the e-mail contact"><span class="input-group-btn">
-                    <button id="email-us" type="button" class="btn c-theme-btn c-theme-border c-btn-square c-btn-uppercase c-font-16">Contact me</button></span>
+                    <button id="email-us" type="submit" class="btn c-theme-btn c-theme-border c-btn-square c-btn-uppercase c-font-16">Contact me</button></span>
                 </div>
               </form>
             </div>
@@ -324,32 +328,7 @@
         
       }); //ready
       
-      
     </script>
-    <script>
-      $(function () {
-        $('#email-us').on('click', function () {
-          //- alert(1)
-          $.ajax({
-            url: 'http://exma-square.us13.list-manage.com/tweet-subscribe', 
-            data:{
-              EMAIL: $('#EMAIL').val(),
-              id: $('#subId').val()
-            },
-            type: 'POST',
-            crossDomain: true
-          })
-          .always(function (body) {
-            alert('剩下一步，請到信箱收信進行確認，完成預約步驟！');  
-            $('#EMAIL').val('');
-          });
-          //- .fail(function (body) {
-          //-   alert('剩下一步，請到信箱收信進行確認，完成預約步驟！');  
-          //-   $('#EMAIL').val('');
-          //- });
-          
-        })
-      });
-    </script>
+    <script src="/assets/scripts/subscribe.js"></script>
   </body>
 </html>

@@ -45,6 +45,8 @@ block content
 
             //- h3.c-main-title.c-font-48.c-font-bold.c-font-center.c-font-uppercase.c-font-dark.c-block(data-t='index.title')
             form.email-form.form-inline(action='//exma-square.us13.list-manage.com/subscribe/post?u=3cbc77dd061f94042895497df&id=bd6cac3f67', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
+              input(type="hidden" name="u" value="3cbc77dd061f94042895497df")
+              input(type="hidden" name="id" value="bd6cac3f67")
               .form-group
                 input.form-control.c-bg-transparent.input-lg.c-theme.c-square(type='email', value='', name='FNAME', placeholder='聯絡姓名')
               .form-group
@@ -144,9 +146,11 @@ block content
               span(data-t='contact.title')
           .col-sm-6
             form(action='//exma-square.us13.list-manage.com/subscribe/post?u=3cbc77dd061f94042895497df&id=bd6cac3f67', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
+              input(type="hidden" name="u" value="3cbc77dd061f94042895497df")
+              input(type="hidden" name="id" value="bd6cac3f67")
               .input-group.input-group-lg
                 input#EMAIL.form-control.c-square.c-font-grey-3.c-border-grey.c-theme(type='text', name='EMAIL', data-attr-t='', placeholder-t='contact.emailPlaceholder', required='')
                 span.input-group-btn
-                  button#email-us.btn.c-theme-btn.c-theme-border.c-btn-square.c-btn-uppercase.c-font-16(type='button', data-t='contact.button')
+                  button#email-us.btn.c-theme-btn.c-theme-border.c-btn-square.c-btn-uppercase.c-font-16(type='submit', data-t='contact.button')
 
   include ./partials/_footer

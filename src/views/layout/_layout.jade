@@ -154,28 +154,28 @@ html(lang='en')
         
       }); //ready
       
-
-    script.
-      $(function () {
-        $('#email-us').on('click', function () {
-          //- alert(1)
-          $.ajax({
-            url: 'http://exma-square.us13.list-manage.com/tweet-subscribe', 
-            data:{
-              EMAIL: $('#EMAIL').val(),
-              id: $('#subId').val()
-            },
-            type: 'POST',
-            crossDomain: true
-          })
-          .always(function (body) {
-            alert('剩下一步，請到信箱收信進行確認，完成預約步驟！');  
-            $('#EMAIL').val('');
-          });
-          //- .fail(function (body) {
-          //-   alert('剩下一步，請到信箱收信進行確認，完成預約步驟！');  
-          //-   $('#EMAIL').val('');
-          //- });
+    script(src="/assets/scripts/subscribe.js")
+    //- script.
+    //-   $(function () {
+    //-     $('#email-us').on('click', function () {
+    //-       //- alert(1)
+    //-       $.ajax({
+    //-         url: 'http://exma-square.us13.list-manage.com/tweet-subscribe', 
+    //-         data:{
+    //-           EMAIL: $('#EMAIL').val(),
+    //-           id: $('#subId').val()
+    //-         },
+    //-         type: 'POST',
+    //-         crossDomain: true
+    //-       })
+    //-       .always(function (body) {
+    //-         alert('剩下一步，請到信箱收信進行確認，完成預約步驟！');  
+    //-         $('#EMAIL').val('');
+    //-       });
+    //-       //- .fail(function (body) {
+    //-       //-   alert('剩下一步，請到信箱收信進行確認，完成預約步驟！');  
+    //-       //-   $('#EMAIL').val('');
+    //-       //- });
           
-        })
-      });
+    //-     })
+    //-   });
