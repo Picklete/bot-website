@@ -44,11 +44,13 @@ block content
             h5.c-font-24.c-font-thin.c-font-white.c-font-uppercase.c-subtitle.c-margin-b-40 立即申請，享有專人諮詢
 
             //- h3.c-main-title.c-font-48.c-font-bold.c-font-center.c-font-uppercase.c-font-dark.c-block(data-t='index.title')
-            form.form-inline(action='#')
+            form.email-form.form-inline(action='//exma-square.us13.list-manage.com/subscribe/post?u=3cbc77dd061f94042895497df&id=bd6cac3f67', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
               .form-group
-                input.form-control.c-bg-transparent.input-lg.c-theme.c-square(type='text', placeholder='聯絡姓名')
+                input.form-control.c-bg-transparent.input-lg.c-theme.c-square(type='email', value='', name='FNAME', placeholder='聯絡姓名')
               .form-group
-                input.form-control.c-bg-transparent.input-lg.c-theme.c-square(type='email', placeholder='Email')
+                input.form-control.c-bg-transparent.input-lg.c-theme.c-square(type='email', value='', name='EMAIL', placeholder='Email')
+              .form-group
+                input.form-control.c-bg-transparent.input-lg.c-theme.c-square(type='text', value='', name='PHONE', placeholder='聯絡電話')
               button.btn.btn-lg.btn-danger.c-btn-uppercase.c-btn-square.c-btn-bold(type='submit') 立即詢問
           .tp-banner
             ul
@@ -141,7 +143,7 @@ block content
               i.fa.fa-bolt
               span(data-t='contact.title')
           .col-sm-6
-            form(action='http://exma-square.us13.list-manage.com/tweet-subscribe', method='POST')
+            form(action='//exma-square.us13.list-manage.com/subscribe/post?u=3cbc77dd061f94042895497df&id=bd6cac3f67', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
               .input-group.input-group-lg
                 input#subId(type='hidden', name='id', value='us13-3cbc77dd061f94042895497df-195b3872c2')
                 input#EMAIL.form-control.c-square.c-font-grey-3.c-border-grey.c-theme(type='text', name='EMAIL', data-attr-t='', placeholder-t='contact.emailPlaceholder', required='')
